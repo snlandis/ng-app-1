@@ -1,0 +1,16 @@
+<div class="container" *ngIf="feature">
+  <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">{{ feature.title }}</h1>
+    </div>
+  </div>
+
+  <div class="app-feature">
+    <p><strong>Excerpt</strong>: {{ feature.excerpt }}</p>
+    <img [src]="feature.image" [alt]="feature.title">
+    <h2 class="pagination-default">Feature Description:</h2>
+    <p>{{ feature.description }}</p>
+  </div>
+
+</div>
